@@ -1,5 +1,5 @@
 import java.util.*;
-class Evaluation_postfix
+class Evaluation_prefix
 {
 	int top=-1 ;
 	int a[]= new int[50];
@@ -57,7 +57,7 @@ class Evaluation_postfix
 		}
 		public void evaluation(String str)
 		{
-			for(int i=0;i<str.length();i++)
+			for(int i=str.length()-1;i>=0;i--)
 			{
 				boolean flag=Character.isDigit(str.charAt(i));
 				if(flag)
@@ -72,7 +72,7 @@ class Evaluation_postfix
 			System.out.println("ans:"+value);
 		}
 	}
-	public class Eva_postfix
+	public class Eva_prefix
 	{
 		public static void main(String[] args)
 		{
@@ -82,5 +82,4 @@ class Evaluation_postfix
 			Evaluation_postfix a=new Evaluation_postfix();
 			a.evaluation(expression);
 		}
-	}
-
+}
