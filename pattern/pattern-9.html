@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Diamond Pattern 9</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n=parseInt(prompt("Enter No"));
+		for(i=1;i<=n;i++)
+		{
+			for(j=1;j<=n-i;j++)
+			{
+				document.write(" &nbsp");
+			}
+			for(j=1;j<=2*i-1;j++)
+			{
+				
+				document.write("*");
+			}
+			document.write("</br>");
+
+		}
+		for(i=1;i<=n-1;i++)
+		{
+			for(j=1;j<=i;j++)
+			{
+				document.write(" &nbsp");
+			}
+			for(j=1;j<=2*(n-i)-1;j++)
+			{
+				
+				document.write("*");
+				
+			}
+			document.write("</br>");
+
+		}
+		
+	</script>
+
+</body>
+</html>

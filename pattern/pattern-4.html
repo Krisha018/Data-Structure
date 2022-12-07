@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Square Pattern 1</title>
+	<title> Hollow Square Pattern 4</title>
 </head>
 <body>
 	<script type="">
@@ -12,7 +12,14 @@
 		{
 			for(j=1;j<=n;j++)
 			{
-				document.write("*");
+				if(i==1 || i==n || j==1 || j==n)
+				{
+					document.write("*");
+				}
+				else
+				{
+					document.write("&nbsp ");
+				}
 			}
 			document.write("</br>");
 		}

@@ -3,16 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Square Pattern 1</title>
+	<title>pyramid Pattern 7</title>
 </head>
 <body>
-	<script type="">
+	<script type="text/javascript">
 		n=parseInt(prompt("Enter No"));
 		for(i=1;i<=n;i++)
 		{
-			for(j=1;j<=n;j++)
+			for(j=1;j<=n+i-1;j++)
 			{
-				document.write("*");
+				if(j<=n-i)
+				{
+					document.write(" &nbsp&nbsp");
+				}
+				else
+				{
+					document.write("* ");
+				}
+
 			}
 			document.write("</br>");
 		}

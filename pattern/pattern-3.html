@@ -3,14 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Square Pattern 1</title>
+	<title>Right Triangle Pattern 3</title>
 </head>
 <body>
-	<script type="">
+	<script type="text/javascript">
 		n=parseInt(prompt("Enter No"));
 		for(i=1;i<=n;i++)
 		{
-			for(j=1;j<=n;j++)
+			for(j=0;j<n-i;j++)
+			{
+				document.write("&nbsp ");
+			}
+			for(k=0;k<i;k++)
 			{
 				document.write("*");
 			}
